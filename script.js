@@ -7,11 +7,12 @@ console.log(a)
 let c = a + b
 console.log(c)
 let four_zero_four = document.querySelector('#four_zero_four')
-let prica = document.querySelector ('#price')
-let imge = document.querySelector ('#imge')
+let prica = document.querySelector('#price')
+let imge = document.querySelector('#imge')
 let d = []
-let price =[]
-let kartunochki =[]
+let price = []
+let kartunochki = []
+
 function add() {
     shop.innerHTML = ''
     if (four_zero_four.value != '') {
@@ -20,7 +21,7 @@ function add() {
         kartunochki.push(imge.value)
         console.log(d)
         for (i = 0; i < d.length; i++) {
-            shop.innerHTML +=`<div class="towar"> 
+            shop.innerHTML += `<div class="towar"> 
             <img src="${kartunochki[i]}" alt="">
             <h3>${d[i]}</h3>
             <span>${price[i]}</span>
@@ -31,21 +32,33 @@ function add() {
 
 }
 let shop = document.querySelector('.shop')
-let five_zero_five = documnt.querySelector('#five_zero_five')
+let five_zero_five = document.querySelector('#five_zero_five')
 
 function five_zero_fiva() {
 
     shop.innerHTML = ''
     if (five_zero_five.value != '') {
-    // delete  d[five_zero_five.value]
-d.splice(d.indexOf(five_zero_five.value)  ,1)
-price.splice(d.indexOf(five_zero_five.value)  ,1)
+        // delete  d[five_zero_five.value]
+        d.splice(d.indexOf(five_zero_five.value), 1)
+        price.splice(d.indexOf(five_zero_five.value), 1)
         console.log(d)
         for (i = 0; i < d.length; i++) {
-            shop.innerHTML +=` <div clas="towar"> ${d[i]}</div>`
+            shop.innerHTML += ` <div class="towar"> ${d[i]}</div>`
         }
 
     }
 }
-let log= document.querySelector('#log')
-let pass= document.querySelector('#pass')
+let admin = document.querySelector('#addmin')
+let log = document.querySelector('#log')
+let pass = document.querySelector('#pass')
+let login = 'kubik_rubik'
+let password = 'rubik_kubik '
+
+function getadmin() {
+    if (log.value == login) {
+        admin.style.display = 'block'
+    }
+    else{
+        alert("don't richt login")
+    }
+}
