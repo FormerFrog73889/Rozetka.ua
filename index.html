@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div>
-<input id="log" type="text">
-<input id="pass" type="password">
-<button onclick="getadmin()">login</button>
-    </div>
-   <div id="addmin">  <input id="imge"  type="url">
-    <input id="four_zero_four"  type="text">
-    <input id="price" type="number">
-    <button onclick="add()"> add </button>
-    <input id="five_zero_five" type="numder">
-    <button  onclick ="five_zero_fiva()" >remove</button></div>
-<div class="shop">
 
-</div>
+<body>
+    <div class="log_in">
+        <input id="log" type="text" placeholder="login">
+        <input id="pass" type="password" placeholder="password">
+        <button onclick="getadmin()">login</button>
+    </div>
+    <div id="addmin">
+        <div class="admin_content"><div class="close" onclick="close_admin()"><div></div>
+        <div></div></div>
+            <input id="imge" type="url" placeholder="url image">
+            <input id="four_zero_four" type="text" placeholder="title">
+            <input id="price" type="number" placeholder="price">
+            <button onclick="add()"> add </button>
+            <input id="five_zero_five" type="numder" placeholder=" ">
+            <button onclick="five_zero_fiva()">remove</button></div>
+    </div>
+
+    <div class="shop">
+
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
